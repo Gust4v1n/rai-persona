@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Raí</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="home">
+        <img src="https://media.canva.com/v2/image-resize/format:JPG/height:800/quality:92/uri:ifs%3A%2F%2FM%2Ff5f6bd33-1f3d-47ad-a8f9-ce81bf730a33/watermark:F/width:594?csig=AAAAAAAAAAAAAAAAAAAAAHIciEBfY8KyY_r3sjBswg0Hor_dqHcqxW9cx51F7pAi&exp=1758651031&osig=AAAAAAAAAAAAAAAAAAAAAJVxKti-OhP_UGgwiVc-IQmieFTKntq9h92ybr5CtrzP&signer=media-rpc&x-canva-quality=screen"
+            alt="Avatar do Raí" class="avatar">
+        <h1>Raí</h1>
+    </header>
+
+    <section id="missao">
+        <h2>Missão</h2>
+        <p style="text-align: center;">Clique nas cartas para virar e descobrir!</p>
+        <div class="carta">
+            <div class="carta-inner">
+                <div class="carta-front">
+                    <h3>Carta 1</h3>
+                    <p>Motivação</p>
+                </div>
+                <div class="carta-back">
+                    <h3>Fazer as coisas do meu jeito</h3>
+                    <p>Eu sou autêntico e sigo meu próprio caminho!</p>
+                </div>
+            </div>
+        </div>
+        <div class="carta">
+            <div class="carta-inner">
+                <div class="carta-front">
+                    <h3>Carta 2</h3>
+                    <p>Valor</p>
+                </div>
+                <div class="carta-back">
+                    <h3>Ser verdadeiro</h3>
+                    <p>Honestidade em todas as aventuras!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="poderes">
+        <h2>Poderes de Personalidade</h2>
+        <div class="poder">
+            <label class="tooltip">Companheiro (93%)<span class="tooltiptext">Sempre ajuda os amigos em qualquer
+                    missão.</span></label>
+            <div class="barra">
+                <div class="progresso" style="width: 93%;"></div>
+            </div>
+        </div>
+        <div class="poder">
+            <label class="tooltip">Alegre (95%)<span class="tooltiptext">Energia positiva quase no nível máximo, espalha
+                    alegria no grupo.</span></label>
+            <div class="barra">
+                <div class="progresso" style="width: 95%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metas">
+        <h2>Metas</h2>
+        <ul class="quest">
+            <li>Formar na escola</li>
+            <li>Passar na faculdade de arquitetura</li>
+            <li>Conseguir trabalho depois do ensino médio</li>
+        </ul>
+        <div class="progress-bar">
+            <!-- <div class="progress-fill"></div> -->
+        </div>
+        <p>Progresso: 0 de 3 conquistas completas</p>
+    </section>
+
+    <section id="rotina">
+        <h2>Rotina</h2>
+        <div class="timeline">
+            <div class="fase">📚 Escola</div>
+            <div class="fase">🏃 Caminhada</div>
+            <div class="fase">🎧 Ouço música</div>
+            <div class="fase">🍽️ Almoço</div>
+            <div class="fase">😴 Durmo</div>
+            <div class="fase">🚿 Tomo banho</div>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz sobre o Raí</h2>
+        <div class="quiz">
+            <p>Qual o valor mais importante para Raí?</p>
+            <button onclick="checkAnswer('Ser verdadeiro', true)">Ser verdadeiro</button>
+            <button onclick="checkAnswer('Dinheiro', false)">Dinheiro</button>
+            <button onclick="checkAnswer('Escola', false)">Escola</button>
+
+            <p id="q2" style="display:none;">Qual é a porcentagem de alegria dele?</p>
+            <button id="btn95" onclick="checkAnswer('95%', true)" style="display:none;">95%</button>
+            <button id="btn80" onclick="checkAnswer('80%', false)" style="display:none;">80%</button>
+
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
